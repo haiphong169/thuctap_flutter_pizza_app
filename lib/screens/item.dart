@@ -18,7 +18,7 @@ class ItemScreen extends StatelessWidget {
       ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
         const SizedBox(
-          height: 120,
+          height: 100,
         ),
         Hero(
           tag: pizza.name,
@@ -37,9 +37,12 @@ class ItemScreen extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        Text(
-          pizza.description,
-          style: const TextStyle(fontSize: 20),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            pizza.description,
+            style: const TextStyle(fontSize: 20),
+          ),
         )
       ]),
     );
